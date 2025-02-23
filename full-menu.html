@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="color: yellow;">Our Burger Menu</h1>
+    <div class="cart-icon" onclick="document.getElementById('cart-popup').classList.toggle('show')">
+        <img src="trolley_6337212.png" alt="Cart">
+        <h5 class="carts">My Cart</h5>
+        <div id="cart-count" class="cart-count" style="display:none;">0</div>
+    </div>
+<div class="menu-container">
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Classic Burger">
+            <h3>Classic Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty1','slice Burger', 5.99, -1)">-</button>
+                <span id="qty1">0</span>
+                <button onclick="updateQuantity('qty1','slice Burger', 5.99, 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Cheese Burger">
+            <h3>Cheese Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$6.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty2','cheese Burger', 5.99, -1)">-</button>
+                <span id="qty2">0</span>
+                <button onclick="updateQuantity('qty2','cheese Burger', 5.99, 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_2n7hdh2n7hdh2n7h.jpg" alt="Bacon Burger">
+            <h3>Bacon Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$7.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty3', -1)">-</button>
+                <span id="qty3">0</span>
+                <button onclick="updateQuantity('qty3', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_2n7hdh2n7hdh2n7h.jpg" alt="Veggie Burger">
+            <h3>Veggie Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.49</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty4', -1)">-</button>
+                <span id="qty4">0</span>
+                <button onclick="updateQuantity('qty4', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_9rx79s9rx79s9rx7.jpg" alt="Classic Burger">
+            <h3>Classic Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty5', -1)">-</button>
+                <span id="qty5">0</span>
+                <button onclick="updateQuantity('qty5', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Cheese Burger">
+            <h3>Cheese Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$6.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty6', -1)">-</button>
+                <span id="qty6">0</span>
+                <button onclick="updateQuantity('qty6', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_njnwwxnjnwwxnjnw.jpg" alt="Bacon Burger">
+            <h3>Bacon Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$7.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty7', -1)">-</button>
+                <span id="qty7">0</span>
+                <button onclick="updateQuantity('qty7', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_9rx79s9rx79s9rx7.jpg" alt="Veggie Burger">
+            <h3>Veggie Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.49</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty8', -1)">-</button>
+                <span id="qty8">0</span>
+                <button onclick="updateQuantity('qty8', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Bacon Burger">
+            <h3>Bacon Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$7.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty9', -1)">-</button>
+                <span id="qty9">0</span>
+                <button onclick="updateQuantity('qty9', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_njnwwxnjnwwxnjnw.jpg" alt="Veggie Burger">
+            <h3>Veggie Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.49</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty10', -1)">-</button>
+                <span id="qty10">0</span>
+                <button onclick="updateQuantity('qty10', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Cheese Burger">
+            <h3>Cheese Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$6.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty11', -1)">-</button>
+                <span id="qty11">0</span>
+                <button onclick="updateQuantity('qty11', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_njnwwxnjnwwxnjnw.jpg" alt="Bacon Burger">
+            <h3>Bacon Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$7.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty12', -1)">-</button>
+                <span id="qty12">0</span>
+                <button onclick="updateQuantity('qty12', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_9rx79s9rx79s9rx7.jpg" alt="Veggie Burger">
+            <h3>Veggie Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.49</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty13', -1)">-</button>
+                <span id="qty13">0</span>
+                <button onclick="updateQuantity('qty13', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Bacon Burger">
+            <h3>Bacon Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$7.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty14', -1)">-</button>
+                <span id="qty14">0</span>
+                <button onclick="updateQuantity('qty14', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_njnwwxnjnwwxnjnw.jpg" alt="Veggie Burger">
+            <h3>Veggie Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.49</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty15', -1)">-</button>
+                <span id="qty15">0</span>
+                <button onclick="updateQuantity('qty15', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Cheese Burger">
+            <h3>Cheese Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$6.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty16', -1)">-</button>
+                <span id="qty16">0</span>
+                <button onclick="updateQuantity('qty16', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_njnwwxnjnwwxnjnw.jpg" alt="Bacon Burger">
+            <h3>Bacon Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$7.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty17', -1)">-</button>
+                <span id="qty17">0</span>
+                <button onclick="updateQuantity('qty17', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_9rx79s9rx79s9rx7.jpg" alt="Veggie Burger">
+            <h3>Veggie Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.49</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty18', -1)">-</button>
+                <span id="qty18">0</span>
+                <button onclick="updateQuantity('qty18', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_gbtn10gbtn10gbtn.jpg" alt="Bacon Burger">
+            <h3>Bacon Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$7.99</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty19', -1)">-</button>
+                <span id="qty19">0</span>
+                <button onclick="updateQuantity('qty19', 1)">+</button>
+
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="Gemini_Generated_Image_njnwwxnjnwwxnjnw.jpg" alt="Veggie Burger">
+            <h3>Veggie Burger</h3>
+            <p>Juicy beef patty with fresh lettuce, tomato, and our signature sauce.</p>
+            <p>$5.49</p>
+            <div class="quantity-controls">
+                <button onclick="updateQuantity('qty20', -1)">-</button>
+                <span id="qty20">0</span>
+                <button onclick="updateQuantity('qty20', 1)">+</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cart-popup" class="cart-popup">
+    <h2>Your Cart</h2>
+    <div id="cart-details"></div>
+    <p>Total: $<span id="total-price">0.00</span></p>
+    <button class="confirm-order" onclick="confirmOrder()">Confirm Order</button>
+    <button class="cancel-order" onclick="document.getElementById('cart-popup').classList.remove('show')">Cancel</button>
+</div>
+    <script>
+    let cart = {};
+        function updateQuantity(id, name, price, change) {
+            let qtyElement = document.getElementById(id);
+            let currentQty = parseInt(qtyElement.innerText);
+            let newQty = Math.max(0, currentQty + change);
+            qtyElement.innerText = newQty;
+            
+            if (newQty > 0) {
+                cart[name] = { quantity: newQty, price: price };
+            } else {
+                delete cart[name];
+            }
+            updateCart();
+        }
+        function updateCart() {
+            let cartDetails = document.getElementById("cart-details");
+            let cartCount = document.getElementById("cart-count");
+            let totalPrice = 0;
+            cartDetails.innerHTML = "";
+            Object.keys(cart).forEach(item => {
+                let { quantity, price } = cart[item];
+                totalPrice += quantity * price;
+                cartDetails.innerHTML += `<p>${item} x${quantity} - $${(quantity * price).toFixed(2)}</p>`;
+            });
+            document.getElementById("total-price").innerText = totalPrice.toFixed(2);
+            cartCount.style.display = Object.keys(cart).length ? "block" : "none";
+            cartCount.innerText = Object.values(cart).reduce((sum, item) => sum + item.quantity, 0);
+        }
+        function confirmOrder() {
+            alert("Order Confirmed!");
+            cart = {};
+            updateCart();
+            document.getElementById("cart-popup").classList.remove("show");
+        }
+        </script>
+</html>
